@@ -14,6 +14,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'fatih/vim-go'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 
@@ -75,6 +76,7 @@ syntax enable
 set wildmenu
 set showcmd
 set cursorline
+set noswapfile
 " au WinLeave * set nocursorline nocursorcolumn                                                          
 " au WinEnter * set cursorline cursorcolumn
 set modelines=1
@@ -82,6 +84,8 @@ set foldenable 	" Enabling fold
 set foldmethod=marker " for the '{{
 set foldlevel=0
 set modelines=1
+set expandtab
+set shiftwidth=4
 " MY OWN THEME
 highlight Pmenu ctermfg=white
 highlight PmenuSel ctermbg=gray
