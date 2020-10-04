@@ -1,4 +1,4 @@
-" Plugins:{{{
+" Plugins Used :{{{
 " FOLLOWING FOR VUNDLE AND RESP PLUGINS
 set nocompatible              " be iMproved, required
 filetype off                  " required
