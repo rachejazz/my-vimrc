@@ -1,4 +1,4 @@
-" Plugins Used :{{{
+" Plugins:{{{
 " FOLLOWING FOR VUNDLE AND RESP PLUGINS
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -12,9 +12,13 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
-Plugin 'ycm-core/YouCompleteMe'
+" Plugin 'ycm-core/YouCompleteMe'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'fatih/vim-go'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'mattn/emmet-vim'
+Plugin 'dense-analysis/ale'
+
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 
@@ -65,7 +69,8 @@ nmap <silent> <A-Right> :wincmd l<CR>
 " For fake visuals. No redraws
 nnoremap j gj
 nnoremap k gk
-" Esc with jk seq
+let g:multi_cursor_quit_key = '<Esc>'
+ "Esc with jk seq
 inoremap jk <esc>
 "}}}
 
@@ -77,6 +82,9 @@ set wildmenu
 set showcmd
 set cursorline
 set noswapfile
+set spell
+set cindent
+set completeopt=menu,preview,noinsert
 " au WinLeave * set nocursorline nocursorcolumn                                                          
 " au WinEnter * set cursorline cursorcolumn
 set modelines=1
@@ -104,4 +112,7 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_user_command = 'find %s -type f'
 "}}}
 
+" for ale:{{{
+let g:ale_set_balloons = 1
+"}}}
 " vim:foldmethod=marker:foldlevel=0
