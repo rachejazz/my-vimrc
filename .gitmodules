@@ -1,0 +1,21 @@
+[submodule "pack/my_plugins/start/YouCompleteMe"]
+	path = pack/my_plugins/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe
+[submodule "pack/my_plugins/start/vim-airline-themes"]
+	path = pack/my_plugins/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "pack/my_plugins/start/vim-go"]
+	path = pack/my_plugins/start/vim-go
+	url = https://github.com/fatih/vim-go
+[submodule "pack/my_plugins/start/vim-multiple-cursors"]
+	path = pack/my_plugins/start/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors
+[submodule "pack/my_plugins/start/emmet-vim"]
+	path = pack/my_plugins/start/emmet-vim
+	url = https://github.com/mattn/emmet-vim
+[submodule "pack/my_plugins/start/ale"]
+	path = pack/my_plugins/start/ale
+	url = https://github.com/dense-analysis/ale
+[submodule "pack/my_plugins/start/vim-airline"]
+	path = pack/my_plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
