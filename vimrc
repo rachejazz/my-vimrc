@@ -2,11 +2,14 @@
 " FOLLOWING FOR VUNDLE AND RESP PLUGINS
 set nocompatible              " be iMproved, required
 filetype off                  " required
+set runtimepath^=~/.vim/pack/my_plugins/start/
+
+"}}}
 
 " For Airline:{{{
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'default'
-let g:airline_theme='wombat'
+let g:airline_theme='bubblegum'
 " FINALLY SEPARATORS «»▶◀
 let g:airline#extensions#tabline#left_sep = '»'
 let g:airline#extensions#tabline#left_alt_sep = '»'
@@ -40,6 +43,8 @@ nnoremap k gk
 let g:multi_cursor_quit_key = '<Esc>'
  "Esc with jk seq
 inoremap jk <esc>
+nnoremap <C-Right> :bnext<CR>
+nnoremap <C-Left> :bprevious<CR>
 "}}}
 
 " Vim stuff:{{{
@@ -50,7 +55,7 @@ set wildmenu
 set showcmd
 set cursorline
 set noswapfile
-set spell
+" set spell
 set cindent
 set completeopt=menu,preview,noinsert
 " au WinLeave * set nocursorline nocursorcolumn                                                          
@@ -62,20 +67,21 @@ set foldlevel=0
 set modelines=1
 set expandtab
 set shiftwidth=4
+set tabstop=4
 " MY OWN THEME
+highlight Comment cterm=bold
 highlight Pmenu ctermfg=white
 highlight PmenuSel ctermbg=gray
 highlight Pmenu ctermbg=darkgray guibg=darkgray  
-highlight LineNr ctermfg=darkgrey
-highlight CursorLine ctermbg=234
+highlight LineNr ctermfg=white ctermbg=None cterm=bold
+highlight CursorLine cterm=None ctermbg=234
 highlight Normal ctermbg=233
-highlight LineNr ctermbg=236
 " }}}
 
 " for ctrlp:{{{
-set runtimepath^=~/.vim/bundle/ctrlp.vim 
+set runtimepath^=~/.vim/pack/my_plugins/start/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_cmd = 'CtrlO'
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_user_command = 'find %s -type f'
 "}}}
