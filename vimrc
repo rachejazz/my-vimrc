@@ -11,8 +11,8 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'default'
 let g:airline_theme='bubblegum'
 " FINALLY SEPARATORS «»▶◀
-let g:airline#extensions#tabline#left_sep = '»'
-let g:airline#extensions#tabline#left_alt_sep = '»'
+let g:airline#extensions#tabline#left_sep = '▶'
+let g:airline#extensions#tabline#left_alt_sep = '▶'
 let g:airline#extensions#tabline#right_sep = '◀'
 let g:airline#extensions#tabline#right_alt_sep = '◀'
 let g:airline_left_sep = '▶'
@@ -65,9 +65,12 @@ set foldenable 	" Enabling fold
 set foldmethod=marker " for the '{{
 set foldlevel=0
 set modelines=1
-set expandtab
 set shiftwidth=4
+set noexpandtab
 set tabstop=4
+set softtabstop=4
+set textwidth=120
+set is hls
 " MY OWN THEME
 highlight Comment cterm=bold
 highlight Pmenu ctermfg=white
