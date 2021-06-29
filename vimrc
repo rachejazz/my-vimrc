@@ -92,5 +92,7 @@ let g:ctrlp_user_command = 'find %s -type f'
 
 " for ale:{{{
 let g:ale_set_balloons = 1
+nmap <silent> <leader>an :ALENext<cr>
+nmap <silent> <leader>ap :ALEPrevious<cr>
 "}}}
 " vim:foldmethod=marker:foldlevel=0
