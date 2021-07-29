@@ -70,7 +70,7 @@ set noexpandtab
 set tabstop=4
 set softtabstop=4
 set nowrap
-set textwidth=120
+set textwidth=0
 set is hls
 " MY OWN THEME
 highlight Comment cterm=bold
