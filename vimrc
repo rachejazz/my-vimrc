@@ -45,6 +45,7 @@ let g:multi_cursor_quit_key = '<Esc>'
 inoremap jk <esc>
 nnoremap <C-Right> :bnext<CR>
 nnoremap <C-Left> :bprevious<CR>
+nnoremap <C-Down> :bdelete<CR>
 "}}}
 
 " Vim stuff:{{{
