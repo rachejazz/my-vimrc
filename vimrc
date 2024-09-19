@@ -9,7 +9,7 @@ set runtimepath^=~/.vim/pack/my_plugins/start/
 " For Airline:{{{
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'default'
-let g:airline_theme='bubblegum'
+let g:airline_theme='simple-theme'
 " FINALLY SEPARATORS «»▶◀
 let g:airline#extensions#tabline#left_sep = '▶'
 let g:airline#extensions#tabline#left_alt_sep = '▶'
@@ -23,12 +23,6 @@ let airline#extensions#ale#show_line_numbers = 1
 let g:airline#extensions#ycm#enabled = 1	" show ycm detected errors
 let g:airline#extensions#ycm#error_symbol = 'E:'	" error counts
 let g:airline#extensions#ycm#warning_symbol = 'W:'	" warning counts
-" }}}
-
-" For ycm-core:{{{
-let g:ycm_add_preview_to_completeopt = 1
-let g:ycm_autoclose_preview_window_after_completion = 0
-let g:ycm_auto_hover = 'CursorHold'
 " }}}
 
 " For any remaps, come here:{{{
