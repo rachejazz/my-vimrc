@@ -8,7 +8,7 @@ set runtimepath^=~/.vim/pack/my_plugins/start/
 
 " For Airline:{{{
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#formatter = 'default'
+let g:airline#extensions#tabline#formatter = 'bubblegum'
 let g:airline_theme='simple-theme'
 " FINALLY SEPARATORS «»▶◀
 let g:airline#extensions#tabline#left_sep = '▶'
